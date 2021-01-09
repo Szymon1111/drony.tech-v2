@@ -1,0 +1,166 @@
+/* * {
+  padding: 0;
+  margin: 0;
+} */
+
+@font-face {
+  font-family: title;
+  src: url("../fonts/Archia_Regular/Archia Regular Desktop/Archia-Regular.otf");
+}
+
+body {
+  background-color: rgb(15, 15, 15);
+  color: white;
+
+  font-family: title;
+}
+
+.flex-column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.flex-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-header {
+  position: relative;
+  margin: auto;
+  justify-content: space-between;
+
+  margin-top: 10vh;
+
+  width: 60vw;
+  max-width: 900px;
+}
+
+.page-title {
+  font-family: title;
+  font-size: 50px;
+  font-weight: 100;
+}
+
+.main-nav-bar {
+  height: 100%;
+  padding: 10px;
+}
+
+.nav-element {
+  margin-left: 25px;
+  font-family: title;
+  cursor: pointer;
+  position: relative;
+
+  transition: 0.5s;
+}
+
+.nav-element::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: #da5552;
+
+  position: absolute;
+  opacity: 0;
+  top: 110%;
+  left: -5%;
+
+  transition: width 0.4s, opacity 0.8s;
+}
+.nav-element:hover::after {
+  width: 110%;
+  opacity: 1;
+  transition: width 0.4s, opacity 0.1s;
+}
+
+.drone-box {
+  position: absolute;
+  background: linear-gradient(
+    90deg,
+    rgb(15, 15, 15) 94%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  width: 100%;
+
+  /* background: linear-gradient(
+    90deg,
+    rgb(255, 255, 255) 94%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  width: 100%; */
+
+  display: flex;
+  justify-content: flex-end;
+
+  z-index: 9999;
+
+  transition: transform 1.2s ease-in-out;
+}
+
+.drone-img {
+  width: 80px;
+
+  animation: drone-animation 1.8s forwards;
+}
+
+@keyframes drone-animation {
+  0% {
+    transform: rotate(0);
+  }
+  35% {
+    transform: rotate(-20deg);
+  }
+  80% {
+    transform: rotate(0);
+  }
+}
+
+.section {
+  max-width: 600px;
+  width: 60vw;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.highlighted {
+  color: #da5552;
+}
+
+.section-title {
+  color: #da5552;
+  font-size: 32px;
+}
+
+.section-content {
+  margin-left: 8px;
+}
+
+p {
+  padding: 3px;
+}
+
+.link {
+  color: #da5552;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+ul li::before {
+  content: "\2022";
+  color: #da5552;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
