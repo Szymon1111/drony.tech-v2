@@ -3,6 +3,7 @@ const scrollTo = (element, block = "center") => {
     behavior: "smooth",
     block: block,
   });
+  openNav();
 };
 
 const home = document.querySelector("body");
@@ -31,6 +32,7 @@ window.addEventListener("wheel", (event) => {
 });
 
 homeBtn.addEventListener("click", () => {
+  openNav();
   window.scroll({ top: 0, left: 0, behavior: "smooth" });
 });
 

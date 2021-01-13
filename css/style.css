@@ -16,7 +16,8 @@ body {
   padding: 0;
   margin: 0;
 
-  overflow: hidden;
+  /* overflow: hidden; */
+  overflow-x: hidden;
 
   scroll-behavior: smooth;
 }
@@ -57,12 +58,17 @@ body {
   left: 0;
 
   z-index: 99;
+
+  opacity: 0;
+
+  /* display: none; */
 }
 
 .page-title {
   font-family: title;
   font-size: 60px;
   font-weight: 100;
+  color: white;
 }
 .page-title-dot {
   color: #da5552;
@@ -234,9 +240,9 @@ body {
 }
 /* MAIN NAV */
 
-.background-video {
-  min-width: 100vw;
+/* BACKGROUND VIDEO */
 
+.background-video {
   position: fixed;
   top: 0;
   left: 0;
@@ -253,21 +259,33 @@ body {
   z-index: -499;
 
   background-color: rgb(15, 15, 15);
+
+  opacity: 1;
+
+  transition: opacity 3s;
 }
 
-.section {
-  max-width: 1600px;
-  width: 75vw;
-  height: 80vh;
-  margin: auto;
+/* BACKGROUND VIDEO */
 
+.section {
+  width: 99vw;
+  height: 100vh;
+
+  padding: 0px calc((100vw - 1600px) / 2);
+  box-sizing: border-box;
+
+  /* max-width: 1600px;
+  margin: auto;
   margin-top: 10vh;
-  margin-bottom: 10vh;
+  margin-bottom: 10vh; */
 
   background-color: rgb(15, 15, 15);
 
-  position: relative;
-  padding-top: 100px;
+  /* position: relative;
+  background: rgba(40, 40, 40, 0.404);
+  backdrop-filter: blur(10px); */
+
+  /* border-radius: 20px; */
 }
 .aboutus-section {
   margin-top: 100vh;
@@ -285,21 +303,23 @@ body {
 .section-content {
   width: 60%;
   font-size: 18px;
-
-  margin-left: 50px;
-  margin-top: 50px;
 }
 
 .aboutus-section-title {
-  margin-top: -120px;
+  margin-top: -100px;
+}
+.aboutus-section-content {
+  margin-top: 100px;
+  margin-left: 50px;
 }
 
 .offer-section-title {
-  margin-left: 40%;
+  margin: 0;
+  margin-left: 50%;
 }
 .offer-section-content {
   font-size: 20px;
-  margin-top: -5%;
+  margin-left: -10%;
 }
 
 .highlighted {
