@@ -1,65 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DRONY.tech</title>
 
-    <link rel="stylesheet" href="./css/style.css?4" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DRONY.tech</title>
 
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-  </head>
-  <body>
-    <header class="page-header flex-row">
-      <div class="drone-box">
-        <img src="./img/drone-white.png" alt="" class="drone-img" />
+  <link rel="stylesheet" href="./css/style.css?4" />
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+</head>
+
+<body>
+  <header class="page-header flex-row">
+    <div class="drone-box">
+      <img src="./img/drone-white.png" alt="" class="drone-img" />
+    </div>
+
+    <div class="page-title">
+      DRONY<span class="page-title-dot">.</span>tech
+    </div>
+  </header>
+  <div class="page-header-background"></div>
+
+  <div class="nav-opener" onclick="openNav()"></div>
+
+  <nav class="main-nav flex-column">
+    <div class="nav-element" id="homeBtn">home</div>
+    <div class="nav-element" id="aboutusBtn">kim&nbspjesteśmy</div>
+    <div class="nav-element" id="offerBtn">oferta</div>
+    <div class="nav-element" id="statusBtn">stan&nbspzlecenia</div>
+    <div class="nav-element">info</div>
+
+    <div class="author-info">
+      Made&nbspby <span class="highlighted">Szymon&nbspPałka</span>
+      <div class="additional-info">
+        szymonpalka2001@gmail.com
       </div>
+    </div>
+  </nav>
 
-      <div class="page-title">
-        DRONY<span class="page-title-dot">.</span>tech
-      </div>
-    </header>
-    <div class="page-header-background"></div>
-
-    <div class="nav-opener" onclick="openNav()"></div>
-
-    <nav class="main-nav flex-column">
-      <div class="nav-element" id="homeBtn">home</div>
-      <div class="nav-element" id="aboutusBtn">kim&nbspjesteśmy</div>
-      <div class="nav-element" id="offerBtn">oferta</div>
-      <div class="nav-element">stan&nbspzlecenia</div>
-      <div class="nav-element">info</div>
-
-      <div class="author-info">
-        Made&nbspby <span class="highlighted">Szymon&nbspPałka</span>
-        <div class="additional-info">
-          szymonpalka2001@gmail.com
-        </div>
-      </div>
-    </nav>
-
-    <div class="video-courtine"></div>
-    <video autoplay muted loop class="background-video" width="100%">
-      <source src="./videos/back2.mp4" type="video/mp4" />
-    </video>
+  <div class="video-courtine"></div>
+  <video autoplay muted loop class="background-video">
+    <source src="./videos/back2.mp4" type="video/mp4" />
+  </video>
 
 
 
-    <section class="section aboutus-section flex-row" id="">
-      <h1 class="section-title aboutus-section-title">
-        Kilka<br />
-        słów<br />
-        o&nbspnas
-      </h1>
-      <div class="section-content aboutus-section-content">
-        <h2 class="section-subtitle aboutus-section-subtitle">
-          Jesteśmy serwisem specjalizującym się w zaawansowanych naprawach
-          elektroniki.<br />
-          Już ponad 20 lat łączymy pasję i wiedzę zyskując uznanie naszych
-          klientów.
-        </h2>
+  <section class="section aboutus-section flex-row" id="">
+    <h1 class="section-title aboutus-section-title">
+      Kilka<br /> słów
+      <br /> o&nbspnas
+    </h1>
+    <div class="section-content aboutus-section-content">
+      <h2 class="section-subtitle aboutus-section-subtitle">
+        Jesteśmy serwisem specjalizującym się w zaawansowanych naprawach elektroniki.
+        <br /> Już ponad 20 lat łączymy pasję i wiedzę zyskując uznanie naszych klientów.
+      </h2>
 
-        <!-- <p>
+      <!-- <p>
           Oprócz naprawiania i serwisowania dronów zajmujemy się realizacją
           wszelkich usług z wykorzystaniem dronów:
         </p>
@@ -69,61 +68,80 @@
           <li>dokumentacja postępów inwestycji</li>
           <li>inspekcje trudno dostępnych miejsc</li>
         </ul> -->
-        <p>
-          Posiadamy wszelkie uprawnienia i doświadczenie do prowadzenia tego
-          typu działań.Zapewniamy wysoki standard usług, a na wszystkie wykonane
-          przez nas prace dajemy Ci gwarancję.
-        </p>
+      <p>
+        Posiadamy wszelkie uprawnienia i doświadczenie do prowadzenia tego typu działań.Zapewniamy wysoki
+        standard usług, a na wszystkie wykonane przez nas prace dajemy Ci gwarancję.
+      </p>
 
-        <p>
-          Drony.tech to miejsce, w którym priorytetem są nasi klienci i ich
-          potrzeby. Nasza praca nie opiera się wyłącznie na wymianie całych
-          drogich podzespołów, ale w miarę możliwości także na ich naprawie.
-        </p>
+      <p>
+        Drony.tech to miejsce, w którym priorytetem są nasi klienci i ich potrzeby. Nasza praca nie opiera się
+        wyłącznie na wymianie całych drogich podzespołów, ale w miarę możliwości także na ich naprawie.
+      </p>
 
-        <p>
-          U nas zawsze jesteś na bieżąco informowany o
-          <a href=""><span class="link"> postępie </span></a> prac nad naprawą
-          Twojego sprzętu. Jesteśmy z Tobą w stałym kontakcie i chętnie
-          rozwiejemy wszelkie wątpliwości.
-        </p>
-      </div>
-    </section>
-    <section class="section flex-column offer-section">
-      <h1 class="section-title offer-section-title">
-        <div class="vertical-title">Oferta
-          <!-- <span>O</span>
+      <p>
+        U nas zawsze jesteś na bieżąco informowany o
+        <a href=""><span class="link"> postępie </span></a> prac nad naprawą Twojego sprzętu. Jesteśmy z Tobą w
+        stałym kontakcie i chętnie rozwiejemy wszelkie wątpliwości.
+      </p>
+    </div>
+  </section>
+
+  <section class="section flex-column offer-section">
+    <h1 class="section-title offer-section-title">
+      <div class="vertical-title">Oferta
+        <!-- <span>O</span>
           <span>f</span>
           <span>e</span>
           <span>r</span>
           <span>t</span>
           <span>a</span> -->
-        </div>
-      </h1>
-      <div class="section-content offer-section-content">
-        <h2 class="section-subtitle">Naprawy dronów</h2>
-        <p>
-          Każda naprawa jest wyceniana indywidualnie. <br>
-          <span class="highlighted">Wycena naprawy jest bezpłatna.</span>  <br>
-          Jeżeli nie uda nam się naprawić
-          Twojego sprzętu - nie pobieramy żadnych opłat za naprawę, części itp.
-        </p>
-        <h2 class="section-subtitle">Usługi dronami |
-          Materiały video/foto</h2>
-        <p>
-          Dysponujemy flotą dronów o różnych możliwościach które można dopasować
-          do zadań i Państwa wymagań. Posiadamy wszystkie wymagane uprawnienia
-          UAVO umożliwiające operacje dronami.
-        </p>
-        <p>
-          <h2 class="section-subtitle highlighted" style="margin-top: 70px">Wszystkie ceny ustalamy indywidualnie w zależności od stopnia zaawansowania zlecenia. Wycena jest bezpłatna.</h2>
-        </p>
       </div>
-    </section>
-    <section class="section e"></section>
+    </h1>
+    <div class="section-content offer-section-content">
+      <h2 class="section-subtitle">Naprawy dronów</h2>
+      <p>
+        Zajmujemy się kompleksowymi naprawami dronów, które obejmują nie tylko wymiany całych podzespołów na
+        nowe, ale również ratowanie uszkodzonych elementów w miarę możliwości i opłacalności takiej operacji.
+      </p>
+      <h2 class="section-subtitle">Usługi dronami | Materiały video/foto</h2>
+      <p>
+        Dysponujemy flotą dronów o różnych możliwościach które można dopasować do zadań i Państwa wymagań.
+        Posiadamy wszystkie wymagane uprawnienia UAVO umożliwiające operacje dronami.
+      </p>
+      <p>
+        <h2 class="section-subtitle highlighted" style="margin-top: 70px">Wszystkie ceny ustalamy indywidualnie
+          w zależności od stopnia zaawansowania zlecenia.<br> Wycena jest bezpłatna.</h2>
+      </p>
+    </div>
+  </section>
+  <section class="section flex-row status-section">
+    <h1 class="section-title status-section-title">
+      Sprawdź<br>
+      stan<br>
+      swojego<br>
+      zlecenia
+    </h1>
 
-    <script src="./js/main.js?2"></script>
-    <script src="./js/nav-bar.js"></script>
-    <script src="./js/scroll.js?4"></script>
-  </body>
+    <div class="section-content">
+
+      <form method="POST" class="flex-column">
+        <label class="input-label">
+          Numer telefonu
+          <input type="number" class="input-field" id="phone-number" max="999999999">
+        </label>
+        <label class="input-label">
+          Numer rewersu
+          <input type="text" class="input-field" id="order-number">
+        </label>
+
+        <button type="submit" class="submit-button">Sprawdź</button>
+      </form>
+    </div>
+  </section>
+
+  <script src="./js/main.js?2"></script>
+  <script src="./js/nav-bar.js"></script>
+  <script src="./js/scroll.js?4"></script>
+</body>
+
 </html>

@@ -16,10 +16,10 @@ body {
   padding: 0;
   margin: 0;
 
-  /* overflow: hidden; */
-  overflow-x: hidden;
+  overflow: hidden;
+  /* overflow-x: hidden; */
 
-  scroll-behavior: smooth;
+  /* scroll-behavior: smooth; */
 }
 
 .flex-column {
@@ -70,6 +70,7 @@ body {
   font-weight: 100;
   color: white;
 }
+
 .page-title-dot {
   color: #da5552;
 
@@ -82,6 +83,7 @@ body {
   from {
     font-size: 0;
   }
+
   to {
     font-size: 60px;
   }
@@ -90,11 +92,9 @@ body {
 .drone-box {
   position: absolute;
   top: -15%;
-  background: linear-gradient(
-    90deg,
-    rgb(15, 15, 15) 92%,
-    rgba(0, 0, 0, 0) 100%
-  );
+  background: linear-gradient(90deg,
+      rgb(15, 15, 15) 92%,
+      rgba(0, 0, 0, 0) 100%);
   width: 110%;
 
   display: flex;
@@ -115,13 +115,16 @@ body {
   0% {
     transform: rotate(0);
   }
+
   35% {
     transform: rotate(-20deg);
   }
+
   80% {
     transform: rotate(0);
   }
 }
+
 /* PAGE HEADER */
 
 /* MAIN NAV */
@@ -147,6 +150,7 @@ body {
 
   z-index: 499;
 }
+
 .main-nav.opened {
   transform: translateX(0);
   transition-delay: 0s;
@@ -165,6 +169,7 @@ body {
 
   cursor: pointer;
 }
+
 .nav-opener::before,
 .nav-opener::after {
   position: absolute;
@@ -187,6 +192,7 @@ body {
 
   transition: 0.5s;
 }
+
 .nav-opener.opened::before {
   height: 15px;
   width: 15px;
@@ -210,9 +216,11 @@ body {
 
   transition: 0.3s;
 }
+
 .nav-element:hover {
   color: #da5552;
 }
+
 .nav-element.opened {
   margin-right: 40px;
 }
@@ -231,13 +239,15 @@ body {
   cursor: pointer;
 }
 
-.author-info:hover > .additional-info {
+.author-info:hover>.additional-info {
   opacity: 1;
 }
+
 .additional-info {
   opacity: 0;
   transition: 0.5s;
 }
+
 /* MAIN NAV */
 
 /* BACKGROUND VIDEO */
@@ -249,6 +259,7 @@ body {
 
   z-index: -500;
 }
+
 .video-courtine {
   width: 100vw;
   height: 100vh;
@@ -268,7 +279,7 @@ body {
 /* BACKGROUND VIDEO */
 
 .section {
-  width: 99vw;
+  width: 100vw;
   height: 100vh;
 
   padding: 0px calc((100vw - 1600px) / 2);
@@ -287,6 +298,7 @@ body {
 
   /* border-radius: 20px; */
 }
+
 .aboutus-section {
   margin-top: 100vh;
 }
@@ -296,6 +308,7 @@ body {
   font-size: 80px;
   font-weight: 700;
 }
+
 .section-subtitle {
   font-size: 26px;
 }
@@ -308,6 +321,7 @@ body {
 .aboutus-section-title {
   margin-top: -100px;
 }
+
 .aboutus-section-content {
   margin-top: 100px;
   margin-left: 50px;
@@ -317,9 +331,84 @@ body {
   margin: 0;
   margin-left: 50%;
 }
+
 .offer-section-content {
   font-size: 20px;
   margin-left: -10%;
+}
+
+.status-section-title {
+  margin: 0;
+  margin-left: 15%;
+}
+
+.input-label {
+  font-family: title;
+
+  margin-top: 40px;
+
+  font-size: 20px;
+}
+
+.input-field {
+  border: none;
+
+  background-color: rgb(30, 30, 30);
+  border-radius: 15px;
+
+  display: block;
+  position: relative;
+  z-index: 100;
+
+  width: 300px;
+
+  padding: 12px 20px;
+  margin: 10px 0;
+
+  font-family: title;
+  /* font-weight: bold; */
+  font-size: 24px;
+  color: white;
+
+  transition: .5s;
+}
+
+.input-field::-webkit-outer-spin-button,
+.input-field::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.input-field[type=number] {
+  -moz-appearance: textfield;
+}
+
+.input-field:focus {
+  outline: none;
+
+  background-color: #646464;
+}
+
+.submit-button {
+  border: none;
+  background-color: transparent;
+
+  font-family: title;
+  font-size: 32px;
+  color: white;
+
+  margin-top: 25px;
+
+  cursor: pointer;
+
+  transition: .5s;
+}
+
+.submit-button:focus {
+  outline: none;
+}
+
+.submit-button:hover {
+  color: #da5552
 }
 
 .highlighted {
@@ -342,6 +431,7 @@ a {
 ul {
   list-style: none;
 }
+
 ul li::before {
   content: "\2022";
   color: #da5552;

@@ -25,7 +25,7 @@ window.onscroll = () => {
   );
   if (window.scrollY > 20) {
     pageHeader.style.top = "8vh";
-  } else {
+  }else{
     pageHeader.style.top = "50vh";
   }
 
