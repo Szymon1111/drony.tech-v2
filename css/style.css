@@ -279,10 +279,10 @@ body {
 /* BACKGROUND VIDEO */
 
 .section {
-  width: 100vw;
+  max-width: 100vw;
   height: 100vh;
 
-  padding: 0px calc((100vw - 1600px) / 2);
+  padding: 0px calc((100vw - 1500px) / 2);
   box-sizing: border-box;
 
   /* max-width: 1600px;
@@ -292,15 +292,14 @@ body {
 
   background-color: rgb(15, 15, 15);
 
+  padding-top: 60px;
+  box-sizing: border-box;
+
   /* position: relative;
   background: rgba(40, 40, 40, 0.404);
   backdrop-filter: blur(10px); */
 
   /* border-radius: 20px; */
-}
-
-.aboutus-section {
-  margin-top: 100vh;
 }
 
 .section-title {
@@ -316,6 +315,10 @@ body {
 .section-content {
   width: 60%;
   font-size: 18px;
+}
+
+.aboutus-section {
+  margin-top: 100vh;
 }
 
 .aboutus-section-title {
@@ -337,9 +340,13 @@ body {
   margin-left: -10%;
 }
 
+.status-section-content{
+  max-width: 350px;
+  margin-left: 15%;
+}
+
 .status-section-title {
   margin: 0;
-  margin-left: 15%;
 }
 
 .input-label {
@@ -370,7 +377,7 @@ body {
   font-size: 24px;
   color: white;
 
-  transition: .5s;
+  transition: 0.5s;
 }
 
 .input-field::-webkit-outer-spin-button,
@@ -378,7 +385,7 @@ body {
   -webkit-appearance: none;
 }
 
-.input-field[type=number] {
+.input-field[type="number"] {
   -moz-appearance: textfield;
 }
 
@@ -400,7 +407,7 @@ body {
 
   cursor: pointer;
 
-  transition: .5s;
+  transition: 0.5s;
 }
 
 .submit-button:focus {
@@ -408,8 +415,62 @@ body {
 }
 
 .submit-button:hover {
-  color: #da5552
+  color: #da5552;
 }
+
+.info-section{
+  justify-content: flex-start;
+}
+
+.info-section-title{
+  font-size: 60px;
+
+  text-align: center;
+
+  margin-top: 100px;
+  margin-bottom: 70px;
+
+  letter-spacing: 20px;
+}
+
+.info-section-content{
+  width: 80%;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.info-title{
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.info{
+  color: #646464;
+  margin: 5px 0;
+  /* padding-left: 15px; */
+}
+
+.contact,
+.address{
+  margin-bottom: 30px;
+}
+
+.google-map{
+  width: 60%;
+  height: 100%;
+}
+
+.socialmedia-icon{
+  width: 40px;
+  margin-right: 20px;
+
+  transition: .5s;
+}
+
+.socialmedia-icon:hover{
+  transform: translateY(-5px);
+}
+
 
 .highlighted {
   color: #da5552;
@@ -439,4 +500,8 @@ ul li::before {
   display: inline-block;
   width: 1em;
   margin-left: -1em;
+}
+
+.scroll-animation {
+  transition: 0.6s;
 }

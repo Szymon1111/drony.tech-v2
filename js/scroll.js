@@ -18,9 +18,15 @@ const offerBtn = document.querySelector("#offerBtn");
 const status = document.querySelector(".status-section");
 const statusBtn = document.querySelector("#statusBtn");
 
-window.addEventListener("wheel", (event) => {
+const info = document.querySelector(".info-section");
+const infoBtn = document.querySelector("#infoBtn");
 
-  if(window.scrollY%window.innerHeight === 0){
+const scrollAnimationElements = document.getElementsByClassName(
+  "scroll-animation"
+);
+
+window.addEventListener("wheel", (event) => {
+  if (window.scrollY % window.innerHeight === 0) {
     if (event.deltaY > 0) {
       window.scrollBy({
         top: window.innerHeight,
@@ -35,8 +41,32 @@ window.addEventListener("wheel", (event) => {
       });
     }
   }
-
 });
+
+window.addEventListener("scroll", () => scrollAnimation());
+
+const scrollAnimation = () => {
+
+  for (let i = 0; i < scrollAnimationElements.length; i++) {
+
+    const element = scrollAnimationElements[i];
+
+    const scrollY = window.scrollY;
+    const wHeight = window.innerHeight;
+
+    const eOffsetTop = element.offsetTop;
+
+    const transformBy = 300;
+
+    if (scrollY + wHeight > eOffsetTop) {
+      if (scrollY + wHeight > eOffsetTop + wHeight)
+        element.style.transform = `translateY(-${transformBy}px)`;
+      else element.style.transform = `translateY(0)`;
+    } else element.style.transform = `translateY(${transformBy}px)`;
+    
+  }
+
+};
 
 homeBtn.addEventListener("click", () => {
   openNav();
@@ -48,3 +78,5 @@ aboutUsBtn.addEventListener("click", () => scrollTo(aboutUs));
 offerBtn.addEventListener("click", () => scrollTo(offer));
 
 statusBtn.addEventListener("click", () => scrollTo(status));
+
+infoBtn.addEventListener("click", () => scrollTo(info));
